@@ -30,7 +30,7 @@ const Library = () => {
                 ">내 라이브러리
                 </p>
             </div>
-            <AiOutlinePlus onClick={onClick} size={20} className="text-neu tral-400 cursor-pointer hover:text-white transition"/>
+            <AiOutlinePlus onClick={onClick} size={20} className="text-neutral-400  tra-400 cursor-pointer hover:text-white transition"/>
            </div>
            <div className="
            flex

@@ -11,7 +11,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
     children,
     disabled,
     type = "button",
-    ...props
+    ...prop
 }, ref)=>{
     return(
         <button
@@ -25,7 +25,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
         px-3
         py-3
         disabled:cursor-not-allowed
-        disalbled:opacity-50
+        disabled:opacity-50
         text-black
         font-bold
         hover:opacity-75
@@ -34,7 +34,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
         )}
         disabled={disabled}
         ref={ref}
-        {...props}
+        {...prop}
         >
             {children}
         </button>

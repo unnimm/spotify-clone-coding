@@ -8,8 +8,6 @@ import { BiSearch } from "react-icons/bi"
 import Button from "./Button"
 
 
-
-useRouter;
 interface HeaderProps {
   children: React.ReactNode;
   className?: string;
@@ -78,6 +76,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                 <RxCaretRight className="text-white"size={35}/>
             </button>
           </div>
+
           {/* mobile view */}
           <div className="flex md:hidden gap-x-2 items-center">
             <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition">
@@ -89,7 +88,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           </div>
 
           <div className="flex justify-between items-center gap-x-4">
-            <>
             <div>
                 <Button
                 onClick={()=>{}}
@@ -114,11 +112,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                   Log in
                 </Button>
             </div>
-            </>
           </div>
         </div>
+        {children}
       </div>
-      {children}
     </div>
   );
 };
