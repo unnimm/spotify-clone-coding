@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import Modal from "@/components/Modal";
+import AuthModal from "@/components/AuthModal";
 
 
 
@@ -23,7 +24,7 @@ const ModalProvider = () => {
     //mounted가 true일 때,
     return (
         <>
-        <Modal title="Test Modal" description="Test Description" isOpen onChange={()=>{}}>Test Children</Modal>
+        <AuthModal></AuthModal>
         </>
     );
 }

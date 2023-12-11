@@ -21,14 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        {/* <SupabaseProvider> */}
+        <SupabaseProvider>
           <UserProvider>
             <ModalProvider />
           <Sidebar>
             {children}
             </Sidebar>
           </UserProvider> 
-        {/* </SupabaseProvider> */}
+        </SupabaseProvider>
       </body>
     </html>
   );
