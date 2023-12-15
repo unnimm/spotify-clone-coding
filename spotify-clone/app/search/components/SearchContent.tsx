@@ -29,7 +29,7 @@ const SearchContent:React.FC<SearchContentProps> = ({songs}) => {
                         onClick={()=>{}}
                         data={song}/>
                     </div>
-                    {/* TODO: Add Like Button Here*/}
+                    <LikeButton songId={song.id}/>
                 </div>
             ))}
         </div>
