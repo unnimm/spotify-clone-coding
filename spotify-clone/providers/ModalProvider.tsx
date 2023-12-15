@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 
 import Modal from "@/components/Modal";
 import AuthModal from "@/components/AuthModal";
-
-
+import UploadModal from '../components/UploadModal';
 
 const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -14,7 +13,7 @@ const ModalProvider = () => {
     //서버사이드 랜더링일때 랜더링이 되지 않도록
     useEffect(()=>{
         setIsMounted(true);
-    },[])
+    },[]) 
 
     //mounted가 false일 때,
     if(!isMounted){
@@ -25,6 +24,7 @@ const ModalProvider = () => {
     return (
         <>
         <AuthModal></AuthModal>
+        <UploadModal />
         </>
     );
 }
